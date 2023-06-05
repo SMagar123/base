@@ -1,0 +1,28 @@
+.servicecard {
+  width: 320px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 3px gainsboro;
+  border-radius: 8px;
+  .icons {
+    svg {
+      color: blue;
+      font-size: 32px;
+    }
+  }
+  .name {
+    p {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  .details {
+    text-align: justify;
+    span {
+      color: #888888;
+    }
+  }
+}
