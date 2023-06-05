@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStackOverflow } from "@fortawesome/free-brands-svg-icons";
-export const ServiceCard = () => {
+export const ServiceCard = ({ serviceIcon, serviceName, serviceDetails }) => {
   return (
     <div className="servicecard">
       <div className="icons">
