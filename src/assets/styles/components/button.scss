@@ -1,0 +1,23 @@
+button {
+  padding: 12px 52px;
+  border-radius: 25px;
+  border: none;
+  background-color: royalblue;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.signin {
+  button {
+    padding: 12px 40px;
+    background-color: transparent;
+    color: white;
+  }
+}
+.signup {
+  button {
+    padding: 12px 32px;
+    background-color: rgb(21, 43, 109);
+  }
+}

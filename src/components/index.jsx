@@ -1,3 +1,5 @@
 import { ProfileCard } from "./ProfileCard";
 import { ServiceCard } from "./ServiceCard";
-export { ProfileCard, ServiceCard };
+import { Button } from "./Button";
+import { PremiumCard } from "./PremiumCard";
+export { ProfileCard, ServiceCard, Button, PremiumCard };

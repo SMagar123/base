@@ -1,11 +1,11 @@
 import "./App.scss";
-import { ProfileCard, ServiceCard } from "./components";
+import { ProfileCard, ServiceCard, Button, PremiumCard } from "./components";
+import { Heropage } from "./pages";
 function App() {
   return (
-    <>
-      <ProfileCard />
-      <ServiceCard />
-    </>
+    <div className="app">
+      <Heropage />
+    </div>
   );
 }
 

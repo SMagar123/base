@@ -1,0 +1,46 @@
+.premiumcard {
+  width: max-content;
+  padding: 10px 16px;
+  text-align: center;
+  border-radius: 8px;
+  min-width: 300px;
+  box-shadow: 0 0 3px #a1a1a1;
+  .plantype {
+    h3 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+  }
+  .pricing {
+    span {
+      &:nth-child(1) {
+        font-size: 32px;
+        font-weight: 700;
+      }
+    }
+    p {
+      color: #888888;
+      font-weight: 400;
+      margin-top: 0px;
+      margin-bottom: 24px;
+      font-size: 20px;
+    }
+  }
+  .accessplan {
+    margin-bottom: 24px;
+  }
+  .storagedetails {
+    p {
+      color: #888888;
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+  .trail {
+    margin-top: 32px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
