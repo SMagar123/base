@@ -1,9 +1,12 @@
 .navbar {
   max-width: 1500px;
   padding: 16px 18px;
-  z-index: 1;
+
+  padding: 16px 32px;
+  z-index: 9;
   margin: 0 auto;
-  // box-shadow: 0 0 3px #888888;
+  position: sticky;
+  top: 0;
 }
 nav {
   display: flex;
@@ -14,6 +17,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 12px 15px;
+  cursor: pointer;
   svg {
     padding: 12px 15px;
     background-color: royalblue;
@@ -32,7 +36,7 @@ nav {
   gap: 32px;
   li {
     list-style: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     color: #888888;
   }
