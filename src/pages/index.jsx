@@ -1,2 +1,3 @@
 import { Heropage } from "./Heropage";
-export { Heropage };
+import { ChooseUs } from "./ChooseUs";
+export { Heropage, ChooseUs };
