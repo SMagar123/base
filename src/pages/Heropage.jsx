@@ -2,6 +2,11 @@ import { Navbar } from "../layouts/Navbar";
 import homepageImage from "../assets/images/homepageImage.png";
 import { Button } from "../components";
 import { ChooseUs } from "./ChooseUs";
+import { ChooseUsDetailing } from "./ChooseUsDetailing";
+import { Members } from "./Members";
+import { Services } from "./Services";
+import { PremiumListing } from "./PremiumListing";
+import { BrandedPhotos } from "./BrandedPhotos";
 export const Heropage = () => {
   return (
     <>
@@ -36,6 +41,11 @@ export const Heropage = () => {
         </div>
       </div>
       <ChooseUs />
+      <ChooseUsDetailing />
+      <Members />
+      <Services />
+      <PremiumListing />
+      <BrandedPhotos />
     </>
   );
 };

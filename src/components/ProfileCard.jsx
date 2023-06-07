@@ -1,5 +1,5 @@
 import React from "react";
-import user1 from "../assets/images/users/user1.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -12,7 +12,7 @@ export const ProfileCard = ({ proImg, username, post }) => {
       <div className="proCard">
         <div className="proDetails">
           <div className="proimage">
-            <img src={user1} alt="user1" />
+            <img src={proImg} alt="user1" />
           </div>
           <div className="proSocialmedia">
             <div className="front-div"></div>
@@ -26,9 +26,9 @@ export const ProfileCard = ({ proImg, username, post }) => {
           </div>
         </div>
         <div className="proDesignation">
-          <span>SDKHFLKASDHFKLA</span>
+          <span>{username}</span>
           <br />
-          <span className="post">sksjfdk</span>
+          <span className="post">{post}</span>
         </div>
       </div>
     </div>

@@ -1,18 +1,18 @@
 import React from "react";
 import { Button } from "./Button";
-export const PremiumCard = () => {
+export const PremiumCard = ({ preName, price, className }) => {
   return (
     <div className="premiumcard">
       <div className="plantype">
-        <h3>Growth</h3>
+        <h3>{preName}</h3>
       </div>
       <div className="pricing">
-        <span>$23</span>
+        <span>${price}</span>
         <span>/month</span>
         <p>No credit card required</p>
       </div>
       <div className="accessplan">
-        <Button />
+        <Button label="Try for Free" className={className} />
       </div>
       <div className="storagedetails">
         <p>400 GB Storaget</p>

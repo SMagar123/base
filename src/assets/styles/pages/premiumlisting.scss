@@ -1,0 +1,61 @@
+.premiumlisting {
+  padding: 32px;
+  background-color: rgba(233, 233, 233, 0.884);
+  position: relative;
+  .halfcircle {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(207, 207, 0);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    top: 20px;
+    // z-index: -1;
+  }
+  .halfcircle2 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(4, 119, 185);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    top: 80px;
+    right: 32px;
+    // z-index: -1;
+  }
+  .premiumlisting-slogan {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: memberSlogan 2s;
+    h2 {
+      font-size: 48px;
+      color: rgb(1, 25, 51);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    p {
+      color: #888888;
+      font-size: 18px;
+    }
+  }
+  .premiumlisting-cards {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    animation: memberSlogan 2s;
+    gap: 32px;
+  }
+}
+@keyframes memberSlogan {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

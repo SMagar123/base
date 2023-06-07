@@ -5,10 +5,10 @@ export const ServiceCard = ({ serviceIcon, serviceName, serviceDetails }) => {
   return (
     <div className="servicecard">
       <div className="icons">
-        <FontAwesomeIcon icon={faStackOverflow} />
+        <FontAwesomeIcon icon={serviceIcon} />
       </div>
       <div className="name">
-        <p>Service</p>
+        <p>{serviceName}</p>
       </div>
       <div className="details">
         <span>

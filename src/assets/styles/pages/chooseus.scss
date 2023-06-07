@@ -1,16 +1,23 @@
 .chooseUs {
   padding: 32px;
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   .chooseUs-individual {
     width: 300px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 24px;
+    animation: individualChooseus;
+    animation-duration: 2s;
+    // animation-delay: 1s;
     .chooseUs-logo {
       background-color: #f368ad;
       padding: 32px;
       border-radius: 100%;
+      text-align: center;
       svg {
         font-size: 32px;
         color: whitesmoke;
@@ -26,5 +33,26 @@
         line-height: 1.5;
       }
     }
+    &:nth-child(2) {
+      .chooseUs-logo {
+        background-color: #20ca66;
+      }
+    }
+    &:nth-child(3) {
+      .chooseUs-logo {
+        background-color: #fa9161;
+      }
+    }
+  }
+}
+
+@keyframes individualChooseus {
+  from {
+    transform: translateY(-90px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

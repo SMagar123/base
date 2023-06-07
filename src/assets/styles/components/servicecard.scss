@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: 0 0 3px gainsboro;
   border-radius: 8px;
+  transition: 250ms ease;
   .icons {
     svg {
       color: rgb(0, 89, 255);
@@ -24,5 +24,8 @@
     span {
       color: #888888;
     }
+  }
+  &:hover {
+    box-shadow: 0 0 5px gainsboro;
   }
 }
