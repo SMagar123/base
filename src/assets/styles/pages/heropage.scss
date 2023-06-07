@@ -12,6 +12,8 @@
     right: -200px;
     width: 850px;
     border-radius: 100%;
+    animation-name: backdrop;
+    animation-duration: 2s;
   }
   .heropage_desc {
     display: flex;
@@ -22,6 +24,8 @@
     .image {
       img {
         position: absolute;
+        animation-name: heroimage;
+        animation-duration: 2s;
         top: 100px;
         right: 150px;
         height: 550px;
@@ -33,6 +37,8 @@
       flex-direction: column;
       gap: 32px;
       width: 550px;
+      animation-name: details;
+      animation-duration: 2s;
       .slogan {
         h2 {
           font-size: 48px;
@@ -64,5 +70,43 @@
         }
       }
     }
+  }
+}
+//animation for details in heropage
+@keyframes details {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes heroimage {
+  from {
+    top: 0px;
+    right: 150px;
+    opacity: 0;
+  }
+  to {
+    top: 100px;
+    right: 150px;
+  }
+}
+@keyframes backdrop {
+  from {
+    bottom: 0;
+    top: -400px;
+    right: -400px;
+  }
+  to {
+    bottom: 0;
+    top: -200px;
+    right: -200px;
   }
 }
