@@ -7,6 +7,8 @@ import { Members } from "./Members";
 import { Services } from "./Services";
 import { PremiumListing } from "./PremiumListing";
 import { BrandedPhotos } from "./BrandedPhotos";
+import { ClinetTestimonal } from "./ClinetTestimonal";
+import { Blogs } from "./Blogs";
 export const Heropage = () => {
   return (
     <>
@@ -46,6 +48,8 @@ export const Heropage = () => {
       <Services />
       <PremiumListing />
       <BrandedPhotos />
+      <ClinetTestimonal />
+      <Blogs />
     </>
   );
 };

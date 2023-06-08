@@ -31,3 +31,11 @@ button {
     background-color: rgb(250, 113, 136);
   }
 }
+.readmore {
+  button {
+    transition: 250ms ease;
+    &:hover {
+      background-color: rgb(250, 113, 136);
+    }
+  }
+}

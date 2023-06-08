@@ -1,7 +1,9 @@
 import React from "react";
 import { PhotoRetoucing } from "../components";
-import smriti from "../assets/images/users/smriti.jpg";
-import rasmika from "../assets/images/users/rasmika.jpg";
+import plant from "../assets/images/branded/project-01.png";
+import bottle from "../assets/images/branded/project-02.png";
+import laptop from "../assets/images/branded/project-03.png";
+import mobile from "../assets/images/branded/project-04.png";
 export const BrandedPhotos = () => {
   return (
     <div className="brandedPhotos">
@@ -16,15 +18,15 @@ export const BrandedPhotos = () => {
       <div className="brandedPhotos-images">
         <div className="left-images">
           <div className="left-top">
-            <PhotoRetoucing photoUrl={rasmika} />
-            <PhotoRetoucing />
+            <PhotoRetoucing photoUrl={plant} />
+            <PhotoRetoucing photoUrl={bottle} />
           </div>
           <div className="left-bottom">
-            <PhotoRetoucing />
+            <PhotoRetoucing photoUrl={laptop} />
           </div>
         </div>
         <div className="right-images">
-          <PhotoRetoucing photoUrl={smriti} />
+          <PhotoRetoucing photoUrl={mobile} />
         </div>
       </div>
     </div>
