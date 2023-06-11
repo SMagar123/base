@@ -1,10 +1,11 @@
 .navbar {
   max-width: 1500px;
   padding: 16px 32px;
-  z-index: 9;
+  z-index: 3;
   margin: 0 auto;
   position: sticky;
   top: 0;
+  background-color: white;
 }
 nav {
   display: flex;
@@ -37,6 +38,10 @@ nav {
     font-size: 20px;
     font-weight: 400;
     color: #888888;
+    cursor: pointer;
+  }
+  .active {
+    color: royalblue;
   }
 }
 .authenticate {
@@ -44,7 +49,7 @@ nav {
   align-items: center;
   justify-content: center;
   svg {
-    color: white;
+    color: #888888;
     font-size: 18px;
   }
 }

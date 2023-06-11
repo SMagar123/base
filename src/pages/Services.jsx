@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ServiceCard } from "../components";
 import {
   faSkype,
@@ -8,9 +8,19 @@ import {
   faAirbnb,
 } from "@fortawesome/free-brands-svg-icons";
 import { faAddressBook } from "@fortawesome/free-regular-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 800,
+      easing: "ease-in-cubic",
+      delay: 100,
+    });
+  }, []);
   return (
-    <div className="services">
+    <div className="services" data-aos="fade-up">
       <div className="services-slogan">
         <h2>We Offer The Best Quality Service for You</h2>
         <p>
@@ -19,7 +29,7 @@ export const Services = () => {
           maximus.
         </p>
       </div>
-      <div className="services-card">
+      <div className="services-card" data-aos="fade-down">
         <ServiceCard serviceIcon={faSkype} serviceName="Skype" />
         <ServiceCard serviceIcon={faAddressBook} serviceName="Address Book" />
         <ServiceCard serviceIcon={fa500px} serviceName="Speed" />

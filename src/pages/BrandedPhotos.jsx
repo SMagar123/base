@@ -26,7 +26,9 @@ export const BrandedPhotos = () => {
           </div>
         </div>
         <div className="right-images">
-          <PhotoRetoucing photoUrl={mobile} />
+          <div className="right-image">
+            <PhotoRetoucing photoUrl={mobile} />
+          </div>
         </div>
       </div>
     </div>

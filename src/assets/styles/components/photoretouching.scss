@@ -1,16 +1,17 @@
 .photoRetouching {
-  border: 1px solid purple;
   overflow: hidden;
   height: 300px;
   .image {
     transition: 1s ease;
+    overflow: hidden;
     img {
+      height: 300px;
     }
   }
   .rollup-info {
     width: 100%;
     text-align: center;
-    height: 370px;
+    height: 300px;
     margin: 0 auto;
     padding: 60px;
     padding: 0 auto;
@@ -39,7 +40,7 @@
     }
     .rollup-info {
       transition: 1s ease;
-      transform: translateY(-350px);
+      transform: translateY(-300px);
     }
   }
 }
